@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="About Blub Blub Studios LLC and our mission to create educational tools with minimal distraction.">
+    <title>About - Blub Blub Studios LLC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="Blub Blub Studios" class="logo">
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>About Blub Blub Studios</h1>
+
+        <section class="section">
+            <div class="content-block">
+                <h2>Our Mission</h2>
+                <p>Blub Blub Studios LLC creates educational tools with minimal distraction. We believe that learning
+                    apps should prioritize education over entertainment, focusing children's attention on skill
+                    development rather than flashy features.</p>
+                <p>Every design decision we make is guided by one question: <strong>"Does this help the child
+                        learn?"</strong> If the answer is no, we remove it.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="content-block">
+                <h2>Our Approach</h2>
+                <p>We build tools, not games. While we want children to enjoy using our apps, our primary goal is
+                    effective learning. This philosophy manifests in several ways:</p>
+
+                <h3>Minimal Distraction Design</h3>
+                <p>We use muted colors, clean layouts, and ample whitespace. Our interfaces are calm and focused,
+                    helping children concentrate on the learning content rather than decorative elements.</p>
+
+                <h3>Purposeful Features</h3>
+                <p>Every feature serves an educational purpose. We don't include unnecessary animations, sounds, or
+                    visual effects that could distract from learning.</p>
+
+                <h3>Privacy First</h3>
+                <p>We respect children's privacy. Our apps don't collect user data, don't include analytics, and don't
+                    integrate with third-party services. Learning happens entirely on the device, under parental
+                    control.</p>
+
+                <h3>Research-Based Content</h3>
+                <p>Our educational content is based on proven teaching methods and research in early childhood
+                    education. We prioritize effectiveness over novelty.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="content-block">
+                <h2>Our Values</h2>
+                <ul class="app-features">
+                    <li><strong>Education First</strong> - Learning outcomes drive all product decisions</li>
+                    <li><strong>Respect for Privacy</strong> - Children deserve privacy-first technology</li>
+                    <li><strong>Minimal Distraction</strong> - Focus enables better learning</li>
+                    <li><strong>Quality Over Quantity</strong> - Well-designed tools are better than many features</li>
+                    <li><strong>Accessibility</strong> - Educational tools should work for all learners</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="content-block">
+                <h2>Our Apps</h2>
+
+                <h3>Story Slider (Coming Soon)</h3>
+                <p>Our first app, Story Slider, helps children learn to read through systematic phonics instruction and
+                    engaging stories. The app progresses from simple to complex reading skills, always maintaining our
+                    commitment to focused, distraction-free learning.</p>
+
+                <h3>Future Projects</h3>
+                <p>We're committed to expanding our catalog of educational tools while maintaining our core values. Each
+                    new app will reflect the same dedication to minimal distraction and effective learning.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="contact-info">
+                <h2>Contact</h2>
+                <p>We'd love to hear from educators, parents, and anyone interested in our mission.</p>
+                <p>Email: <a href="mailto:hello@blubblubstudios.com" class="contact-email">hello@blubblubstudios.com</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+            <p>&copy; 2026 Blub Blub Studios LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function () {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

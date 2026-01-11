@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Blub Blub Studios LLC - Building educational tools with minimal distraction. Creators of Story Slider and other learning-focused apps.">
+    <title>Blub Blub Studios LLC - Educational Apps</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    <header role="banner">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="assets/logo.png" alt="Blub Blub Studios" class="logo">
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <section class="hero">
+            <h1>Educational Tools with Minimal Distraction</h1>
+            <p>At Blub Blub Studios, we create learning-focused apps designed to help children develop essential skills
+                without unnecessary distractions. Our tools are purposefully crafted for education, not entertainment.
+            </p>
+        </section>
+
+        <section class="section">
+            <div class="app-card">
+                <h2>Story Slider <span class="coming-soon">Coming Soon</span></h2>
+                <p class="app-description">An innovative phonics reading app that helps children learn to read through
+                    interactive stories and systematic skill progression.</p>
+
+                <h3>Features</h3>
+                <ul class="app-features">
+                    <li>Systematic phonics instruction aligned with proven reading methods</li>
+                    <li>Engaging stories designed for early readers</li>
+                    <li>Progressive skill development from simple to complex concepts</li>
+                    <li>Clean, distraction-free interface focused on learning</li>
+                    <li>No data collection - complete privacy for young learners</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="content-block">
+                <h2>Our Mission</h2>
+                <p>We believe that educational technology should prioritize learning over entertainment. Every design
+                    decision we make asks: "Does this help the child learn?" If not, we remove it.</p>
+                <p>Our apps use muted colors, clear layouts, and purposeful interactions to keep children focused on
+                    what matters most: developing their skills and confidence.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="content-block">
+                <h2>Privacy First</h2>
+                <p>We respect the privacy of children and families. Story Slider and all future Blub Blub Studios apps
+                    are designed with a privacy-first approach:</p>
+                <ul class="app-features">
+                    <li>No user data collection</li>
+                    <li>No analytics or tracking</li>
+                    <li>No advertisements</li>
+                    <li>No third-party integrations</li>
+                </ul>
+                <p>Learn more in our <a href="privacy.html">Privacy Policy</a>.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <nav aria-label="Footer navigation">
+                <ul class="footer-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2026 Blub Blub Studios LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.querySelector('.mobile-menu-toggle');
+        const nav = document.querySelector('nav');
+
+        toggle.addEventListener('click', function () {
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !isExpanded);
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
