@@ -13,13 +13,14 @@
 </head>
 
 <body>
-    <header>
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    <header role="banner">
         <div class="header-content">
             <div class="logo-container">
                 <img src="assets/logo.png" alt="Blub Blub Studios" class="logo">
             </div>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
-            <nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+            <nav role="navigation" aria-label="Main navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -31,13 +32,13 @@
         </div>
     </header>
 
-    <main>
+    <main id="main-content" role="main">
         <div class="legal-content">
             <h1>Terms of Service</h1>
-            <p class="last-updated">Last Updated: January 8, 2026</p>
+            <p class="last-updated">Last Updated: May 2026</p>
 
             <h2>Agreement to Terms</h2>
-            <p>By downloading, installing, or using any Blub Blub Studios LLC application (including Story Slider), you
+            <p>By downloading, installing, or using any Blub Blub Studios LLC application (including Story Glider), you
                 agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our
                 applications.</p>
 
@@ -128,21 +129,28 @@
         </div>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="footer-content">
-            <ul class="footer-links">
-                <li><a href="about.html">About</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-                <li><a href="terms.html">Terms of Service</a></li>
-            </ul>
+            <nav aria-label="Footer navigation">
+                <ul class="footer-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </nav>
             <p>&copy; 2026 Blub Blub Studios LLC. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
-        document.querySelector('.mobile-menu-toggle').addEventListener('click', function () {
-            document.querySelector('nav').classList.toggle('active');
+        const toggle = document.querySelector('.mobile-menu-toggle');
+        const nav = document.querySelector('nav');
+
+        toggle.addEventListener('click', function () {
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !isExpanded);
+            nav.classList.toggle('active');
         });
     </script>
 </body>
