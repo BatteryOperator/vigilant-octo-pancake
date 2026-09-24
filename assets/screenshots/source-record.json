@@ -1,0 +1,63 @@
+[
+  {
+    "file": "storyglider-follow-the-words.png",
+    "source_workspace": "StorySlider",
+    "source_file": "AppStoreSubmission/screenshots/source/iphone_ReaderPartial.png",
+    "device": "iPhone 17 Pro Max",
+    "captured_at_unix": 1789930302.529,
+    "width": 2868,
+    "height": 1320,
+    "sha256": "f60850068def39c1ddc33bb519eca59b9ea62979bb4690837a90736bc05c6ec9",
+    "modifications": "None; original screenshot copied byte-for-byte."
+  },
+  {
+    "file": "storyglider-levels-one-to-five.png",
+    "source_workspace": "StorySlider",
+    "source_file": "validation_screenshots/max_LevelSelectionUnlocked.png",
+    "device": "iPhone 17 Pro Max",
+    "captured_at": "2026-08-10T21:07:40-07:00",
+    "width": 2868,
+    "height": 1320,
+    "sha256": "795618ff6afeb2da002318f5864a81134edeefcf4e7729ed74462b87ca783de2",
+    "capture_method": "Existing StorySlider validation capture of the LevelSelectionUnlocked state on iPhone 17 Pro Max.",
+    "modifications": "Rotated 180 degrees to normalize the simulator capture; no other changes."
+  },
+  {
+    "file": "storyglider-home-read-history.png",
+    "source_workspace": "StorySlider",
+    "source_file": "Simulator Screenshot - iPhone 17 Pro Max - 2026-09-22 at 21.21.44.png",
+    "device": "iPhone 17 Pro Max",
+    "captured_at": "2026-09-22T21:21:44-07:00",
+    "width": 2868,
+    "height": 1320,
+    "sha256": "5e7869577cf9f88ec4071a00cf9622f0ade6d9e8121202e5f193482cf4d7a791",
+    "capture_method": "Launched the existing Dashboard visual route with completed-story history for Sam, My Dad, The Man Ran, and Sam and the Cat; swiped to center Dan and the Van as the latest Up Next story; then saved using Simulator Save Screen.",
+    "modifications": "Rotated 90 degrees counterclockwise to normalize the simulator's landscape capture; no other changes."
+  },
+  {
+    "file": "storyglider-pug-and-the-ball-question.png",
+    "source_workspace": "StorySlider",
+    "source_file": "Simulator Screenshot - iPhone 17 Pro Max - 2026-09-22 at 20.52.50.png",
+    "device": "iPhone 17 Pro Max",
+    "captured_at": "2026-09-22T20:52:50-07:00",
+    "width": 2868,
+    "height": 1320,
+    "sha256": "7c8232042397a17e4033f31eb1f861131942a7fa4233c042e3fbb0226218428c",
+    "story_title": "The Pug and the Ball",
+    "story_content_file": "StorySlider/Content/Level 7/The Pug and the Ball/the_pug_and_the_ball.json",
+    "question": "What did the pug do after Jill gave the ball a toss?",
+    "capture_method": "Launched the existing StorySample route with ReadingTestStoryTitle The Pug and the Ball; traced all eight pages, advanced to the actual comprehension question, and saved using Simulator Save Screen.",
+    "modifications": "Rotated 90 degrees counterclockwise to normalize the simulator's landscape capture; no other changes."
+  },
+  {
+    "file": "storyglider-longer-story.png",
+    "source_workspace": "StorySlider",
+    "source_file": "AppStoreSubmission/screenshots/source/iphone_LongReaderTraced.png",
+    "device": "iPhone 17 Pro Max",
+    "captured_at_unix": 1789930315.386,
+    "width": 2868,
+    "height": 1320,
+    "sha256": "62350241e3124d519be387d37bf074b5b5b12b821ad17288c63f815560497236",
+    "modifications": "None; original screenshot copied byte-for-byte."
+  }
+]

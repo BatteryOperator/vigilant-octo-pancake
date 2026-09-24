@@ -8,132 +8,69 @@
         content="About Blub Blub Studios LLC and our mission to create educational tools with minimal distraction.">
     <title>About - Blub Blub Studios LLC</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="navigation.js" defer></script>
 </head>
 
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
-    <header role="banner">
+    <header class="site-header">
         <div class="header-content">
-            <div class="logo-container">
-                <img src="assets/logo.png" alt="Blub Blub Studios" class="logo">
-            </div>
-            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
-            <nav role="navigation" aria-label="Main navigation">
+            <a href="index.html" class="logo-container" aria-label="Blub Blub Studios home">
+                <img src="assets/logo.png" alt="Blub Blub Studios" class="logo" width="1024" height="650">
+            </a>
+            <button class="mobile-menu-toggle" type="button" aria-controls="main-navigation" aria-expanded="false">Menu <span aria-hidden="true">+</span></button>
+            <nav id="main-navigation" aria-label="Main navigation">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="index.html">Story Glider</a></li>
+                    <li><a href="about.html" aria-current="page">About</a></li>
                     <li><a href="support.html">Support</a></li>
-                    <li><a href="privacy.html">Privacy</a></li>
-                    <li><a href="terms.html">Terms</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main id="main-content" role="main">
-        <h1>About Blub Blub Studios</h1>
+    <main id="main-content" class="about-page" tabindex="-1">
+        <div class="page-intro about-intro"><p class="eyebrow">About the studio</p><h1>Thoughtful tools.<br>More room to learn.</h1><p>Blub Blub Studios makes calm educational apps for foundational skills.</p></div>
 
-        <section class="section">
-            <div class="content-block">
-                <h2>Our Mission</h2>
-                <p>Blub Blub Studios LLC creates educational tools with minimal distraction. We believe that learning
-                    apps should prioritize education over entertainment, focusing children's attention on skill
-                    development rather than flashy features.</p>
-                <p>Every design decision we make is guided by one question: <strong>"Does this help the child
-                        learn?"</strong> If the answer is no, we remove it.</p>
-            </div>
+        <section class="about-story" aria-labelledby="about-story-title">
+            <div><p class="eyebrow">How we work</p><h2 id="about-story-title">Leave room for the learner.</h2></div>
+            <div><p>We begin with one question: does this help a child learn? That leads us to clear directions, purposeful interactions, and a comfortable pace.</p><p>Our apps avoid ads and third-party analytics. Children can focus on the activity, and their progress stays on the device.</p></div>
         </section>
 
-        <section class="section">
-            <div class="content-block">
-                <h2>Our Approach</h2>
-                <p>We build tools, not games. While we want children to enjoy using our apps, our primary goal is
-                    effective learning. This philosophy manifests in several ways:</p>
-
-                <h3>Minimal Distraction Design</h3>
-                <p>We use muted colors, clean layouts, and ample whitespace. Our interfaces are calm and focused,
-                    helping children concentrate on the learning content rather than decorative elements.</p>
-
-                <h3>Purposeful Features</h3>
-                <p>Every feature serves an educational purpose. We don't include unnecessary animations, sounds, or
-                    visual effects that could distract from learning.</p>
-
-                <h3>Privacy First</h3>
-                <p>We respect children's privacy. Our apps don't collect user data, don't include analytics, and don't
-                    integrate with third-party services. Learning happens entirely on the device, under parental
-                    control.</p>
-
-                <h3>Research-Based Content</h3>
-                <p>Our educational content is based on proven teaching methods and research in early childhood
-                    education. We prioritize effectiveness over novelty.</p>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="content-block">
-                <h2>Our Values</h2>
-                <ul class="app-features">
-                    <li><strong>Education First</strong> - Learning outcomes drive all product decisions</li>
-                    <li><strong>Respect for Privacy</strong> - Children deserve privacy-first technology</li>
-                    <li><strong>Minimal Distraction</strong> - Focus enables better learning</li>
-                    <li><strong>Quality Over Quantity</strong> - Well-designed tools are better than many features</li>
-                    <li><strong>Accessibility</strong> - Educational tools should work for all learners</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="content-block">
-                <h2>Our Apps</h2>
-
-                <h3>Story Glider (Coming Soon)</h3>
-                <p>Our first app, Story Glider, helps children learn to read through systematic phonics instruction and
-                    engaging stories. The app progresses from simple to complex reading skills, always maintaining our
-                    commitment to focused, distraction-free learning.</p>
-
-                <h3>Future Projects</h3>
-                <p>We're committed to expanding our catalog of educational tools while maintaining our core values. Each
-                    new app will reflect the same dedication to minimal distraction and effective learning.</p>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="contact-info">
-                <h2>Contact</h2>
-                <p>We'd love to hear from educators, parents, and anyone interested in our mission.</p>
-                <p>Email: <a href="mailto:hello@blubblubstudios.com" class="contact-email">hello@blubblubstudios.com</a>
-                </p>
-            </div>
+        <section class="about-products" aria-label="Our direction">
+            <article class="about-app">
+                <div class="product-label"><p class="eyebrow">Our first app</p><span class="coming-soon">Coming soon</span></div>
+                <h2>Story Glider</h2>
+                <p>Finger-guided phonics practice through 20 levels of stories.</p>
+                <a class="text-link" href="index.html">Explore Story Glider <span aria-hidden="true">&rarr;</span></a>
+            </article>
+            <article class="about-future">
+                <p class="eyebrow">What comes next</p>
+                <h2>Beyond reading</h2>
+                <p>The same calm approach, applied to early math, counting, and other foundational skills.</p>
+            </article>
         </section>
     </main>
 
-    <footer role="contentinfo">
+    <footer class="site-footer">
         <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html">Blub Blub Studios</a>
+                <p>Thoughtful tools for growing minds.</p>
+            </div>
             <nav aria-label="Footer navigation">
                 <ul class="footer-links">
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html" aria-current="page">About</a></li>
                     <li><a href="support.html">Support</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="accessibility.html">Accessibility</a></li>
                 </ul>
             </nav>
-            <p>&copy; 2026 Blub Blub Studios LLC. All rights reserved.</p>
+            <p class="copyright">&copy; 2026 Blub Blub Studios LLC. All rights reserved.</p>
         </div>
     </footer>
 
-    <script>
-        const toggle = document.querySelector('.mobile-menu-toggle');
-        const nav = document.querySelector('nav');
-
-        toggle.addEventListener('click', function () {
-            const isExpanded = this.getAttribute('aria-expanded') === 'true';
-            this.setAttribute('aria-expanded', !isExpanded);
-            nav.classList.toggle('active');
-        });
-    </script>
 </body>
 
 </html>
